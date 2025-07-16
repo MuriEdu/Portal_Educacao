@@ -12,7 +12,7 @@ Este projeto é uma aplicação de desktop para gerenciar um sistema de portal d
 
 Existem duas maneiras de executar este projeto: com Docker (recomendado) ou configurando o ambiente localmente.
 
-### Opção 1: Com Docker (Recomendado)
+### Opção 1: Com Docker
 
 Esta abordagem gerencia o banco de dados PostgreSQL e o pgAdmin em contêineres, simplificando a configuração.
 
