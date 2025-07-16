@@ -102,7 +102,7 @@ Esta abordagem requer que você tenha o PostgreSQL instalado e configurado em su
    python3 app_gui.py
    ```
 
-## Acesso ao pgAdmin (Apenas com Docker)
+## Acesso ao pgAdmin
 
 Se você usou a opção com Docker, pode acessar o pgAdmin para gerenciar o banco de dados:
 
