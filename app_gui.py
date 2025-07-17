@@ -186,7 +186,12 @@ class EnrollmentApp(QMainWindow):
 
     def criar_conexao(self):
         try:
-            conn = psycopg2.connect(host=DB_HOST, port=DB_PORT, dbname=DB_NAME, user=DB_USER, password=DB_PASS, connect_timeout=5)
+            conn = psycopg2.connect(
+                host=DB_HOST, port=DB_PORT, dbname=DB_NAME,
+                user=DB_USER, password=DB_PASS, connect_timeout=5
+            )
+            # Força o encoding para UTF-8
+            conn.set_client_encoding('UTF8')
             return conn
         except psycopg2.OperationalError as e:
             QMessageBox.critical(None, "Erro de Conexão ❌", f"Não foi possível conectar ao banco de dados.\n\nO aplicativo será fechado.\n\nDetalhe: {e}")
